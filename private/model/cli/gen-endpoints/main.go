@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/aws/aws-sdk-go/aws/endpoints"
+	"github.com/ks3sdk/ks3-go-sdk/aws/endpoints"
 )
 
 // Generates the endpoints from json description
