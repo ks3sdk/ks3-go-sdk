@@ -14,15 +14,15 @@ import (
 	"os"
 	"time"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/awserr"
-	"github.com/aws/aws-sdk-go/aws/corehandlers"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds"
-	"github.com/aws/aws-sdk-go/aws/credentials/endpointcreds"
-	"github.com/aws/aws-sdk-go/aws/ec2metadata"
-	"github.com/aws/aws-sdk-go/aws/endpoints"
-	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/awserr"
+	"github.com/ks3sdk/ks3-go-sdk/aws/corehandlers"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials/ec2rolecreds"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials/endpointcreds"
+	"github.com/ks3sdk/ks3-go-sdk/aws/ec2metadata"
+	"github.com/ks3sdk/ks3-go-sdk/aws/endpoints"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
 )
 
 // A Defaults provides a collection of default values for SDK clients.

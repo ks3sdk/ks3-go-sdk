@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/aws/aws-sdk-go/private/protocol"
+	"github.com/ks3sdk/ks3-go-sdk/private/protocol"
 )
 
 // BuildXML will serialize params into an xml.Encoder.

@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/awserr"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/service/s3"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/awserr"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3"
 )
 
 // SaveStrategy is how the data's metadata wants to be saved

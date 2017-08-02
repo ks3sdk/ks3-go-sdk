@@ -13,12 +13,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/endpoints"
-	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3iface"
-	"github.com/aws/aws-sdk-go/service/s3/s3manager"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/endpoints"
+	"github.com/ks3sdk/ks3-go-sdk/aws/session"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3/s3iface"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3/s3manager"
 )
 
 // server.go is an example of a service that vends lists for requests for presigned

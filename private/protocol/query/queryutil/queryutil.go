@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aws/aws-sdk-go/private/protocol"
+	"github.com/ks3sdk/ks3-go-sdk/private/protocol"
 )
 
 // Parse parses an object i and fills a url.Values object. The isEC2 flag

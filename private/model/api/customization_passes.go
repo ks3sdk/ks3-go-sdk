@@ -89,7 +89,7 @@ func s3Customizations(a *API) {
 // return error codes, all error codes are derived from HTTP
 // status codes.
 //
-// aws/aws-sdk-go#1208
+// ks3sdk/ks3-go-sdk#1208
 func s3CustRemoveHeadObjectModeledErrors(a *API) {
 	op, ok := a.Operations["HeadObject"]
 	if !ok {
@@ -137,7 +137,7 @@ func mergeServicesCustomizations(a *API) {
 
 	for n := range a.Shapes {
 		if _, ok := serviceAPI.Shapes[n]; ok {
-			a.Shapes[n].resolvePkg = "github.com/aws/aws-sdk-go/service/" + info.dstName
+			a.Shapes[n].resolvePkg = "github.com/ks3sdk/ks3-go-sdk/service/" + info.dstName
 		}
 	}
 }

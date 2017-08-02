@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
 )
 
 func getWriterStore(req *request.Request, path string, useTempFile bool) (io.ReadWriteSeeker, error) {

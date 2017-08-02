@@ -9,12 +9,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/awstesting/unit"
-	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/aws/aws-sdk-go/service/s3/s3iface"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/awstesting/unit"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3/s3iface"
 )
 
 func TestHasParity(t *testing.T) {

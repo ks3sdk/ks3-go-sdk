@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws/credentials"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials"
 )
 
 var testCredentials = credentials.NewStaticCredentials("AKID", "SECRET", "SESSION")

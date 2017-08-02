@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws/awserr"
+	"github.com/ks3sdk/ks3-go-sdk/aws/awserr"
 )
 
 func TestRequestThrottling(t *testing.T) {

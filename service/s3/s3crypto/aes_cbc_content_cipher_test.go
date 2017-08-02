@@ -3,7 +3,7 @@ package s3crypto_test
 import (
 	"testing"
 
-	"github.com/aws/aws-sdk-go/service/s3/s3crypto"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3/s3crypto"
 )
 
 func TestAESCBCBuilder(t *testing.T) {

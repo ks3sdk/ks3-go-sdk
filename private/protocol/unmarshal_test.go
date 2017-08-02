@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/private/protocol"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/private/protocol"
 	"github.com/stretchr/testify/assert"
 )
 

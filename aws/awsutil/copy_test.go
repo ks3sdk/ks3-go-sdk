@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/aws/aws-sdk-go/aws/awsutil"
+	"github.com/ks3sdk/ks3-go-sdk/aws/awsutil"
 	"github.com/stretchr/testify/assert"
 )
 

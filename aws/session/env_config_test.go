@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/awstesting"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials"
+	"github.com/ks3sdk/ks3-go-sdk/awstesting"
 )
 
 func TestLoadEnvConfig_Creds(t *testing.T) {

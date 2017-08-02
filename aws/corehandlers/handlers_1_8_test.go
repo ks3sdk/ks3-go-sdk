@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/awstesting"
-	"github.com/aws/aws-sdk-go/service/s3"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/aws/session"
+	"github.com/ks3sdk/ks3-go-sdk/awstesting"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3"
 	"golang.org/x/net/http2"
 )
 

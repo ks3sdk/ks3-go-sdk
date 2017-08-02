@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/internal/shareddefaults"
+	"github.com/ks3sdk/ks3-go-sdk/internal/shareddefaults"
 	"github.com/stretchr/testify/assert"
 )
 

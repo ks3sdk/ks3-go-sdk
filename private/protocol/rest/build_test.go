@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
 )
 
 func TestCleanPath(t *testing.T) {

@@ -10,10 +10,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/aws/aws-sdk-go/aws/awserr"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/private/protocol/json/jsonutil"
-	"github.com/aws/aws-sdk-go/private/protocol/rest"
+	"github.com/ks3sdk/ks3-go-sdk/aws/awserr"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/private/protocol/json/jsonutil"
+	"github.com/ks3sdk/ks3-go-sdk/private/protocol/rest"
 )
 
 var emptyJSON = []byte("{}")

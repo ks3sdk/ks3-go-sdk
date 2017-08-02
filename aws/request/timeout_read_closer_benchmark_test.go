@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/aws/aws-sdk-go/aws/client"
-	"github.com/aws/aws-sdk-go/aws/client/metadata"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/aws/signer/v4"
-	"github.com/aws/aws-sdk-go/awstesting/unit"
-	"github.com/aws/aws-sdk-go/private/protocol/jsonrpc"
+	"github.com/ks3sdk/ks3-go-sdk/aws/client"
+	"github.com/ks3sdk/ks3-go-sdk/aws/client/metadata"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/aws/signer/v4"
+	"github.com/ks3sdk/ks3-go-sdk/awstesting/unit"
+	"github.com/ks3sdk/ks3-go-sdk/private/protocol/jsonrpc"
 )
 
 func BenchmarkTimeoutReadCloser(b *testing.B) {

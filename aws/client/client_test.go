@@ -3,9 +3,9 @@ package client
 import (
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/client/metadata"
-	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/client/metadata"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
 )
 
 func pushBackTestHandler(name string, list *request.HandlerList) *bool {

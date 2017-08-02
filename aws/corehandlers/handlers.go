@@ -12,10 +12,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/awserr"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/awserr"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
 )
 
 // Interface for matching types which also have a Len method.
@@ -87,7 +87,7 @@ var ValidateReqSigHandler = request.NamedHandler{
 		}
 
 		// 10 minutes to allow for some clock skew/delays in transmission.
-		// Would be improved with aws/aws-sdk-go#423
+		// Would be improved with ks3sdk/ks3-go-sdk#423
 		if signedTime.Add(10 * time.Minute).After(time.Now()) {
 			return
 		}

@@ -1,8 +1,8 @@
 package s3
 
 import (
-	"github.com/aws/aws-sdk-go/aws/client"
-	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/ks3sdk/ks3-go-sdk/aws/client"
+	"github.com/ks3sdk/ks3-go-sdk/aws/request"
 )
 
 func init() {

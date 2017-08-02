@@ -3,7 +3,7 @@ package credentials
 import (
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws/awserr"
+	"github.com/ks3sdk/ks3-go-sdk/aws/awserr"
 	"github.com/stretchr/testify/assert"
 )
 

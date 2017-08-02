@@ -6,7 +6,7 @@ Release v1.10.13 (2017-07-19)
   * Update budget Management API's to list/create/update RI_UTILIZATION type budget. Update budget Management API's to support DAILY timeUnit for RI_UTILIZATION type budget.
 
 ### SDK Enhancements
-* `service/s3`:  Use interfaces assertions instead of ValuesAtPath for S3 field lookups. [#1401](https://github.com/aws/aws-sdk-go/pull/1401)
+* `service/s3`:  Use interfaces assertions instead of ValuesAtPath for S3 field lookups. [#1401](https://github.com/ks3sdk/ks3-go-sdk/pull/1401)
   * Improves the performance across the board for all S3 API calls by removing the usage of `ValuesAtPath` being used for every S3 API call.
 
 ### SDK Bugs
@@ -74,7 +74,7 @@ Release v1.10.7 (2017-07-05)
   * Bug fix for InvalidChangeBatch exception.
 
 ### SDK Enhancements
-* `service/s3/s3manager`: adding cleanup function to batch objects [#1375](https://github.com/aws/aws-sdk-go/issues/1375)
+* `service/s3/s3manager`: adding cleanup function to batch objects [#1375](https://github.com/ks3sdk/ks3-go-sdk/issues/1375)
   * This enhancement will add an After field that will be called after each iteration of the batch operation.
 
 Release v1.10.6 (2017-06-30)
@@ -106,9 +106,9 @@ Release v1.10.4 (2017-06-27)
   * Proper tagging of resources is critical to post-launch operations such as billing, cost allocation, and resource management. By using Service Catalog's TagOption Library, administrators can define a library of re-usable TagOptions that conform to company standards, and associate these with Service Catalog portfolios and products. Learn how to move your current tags to the new library, create new TagOptions, and view and associate your library items with portfolios and products. Understand how to ensure that the right tags are created on products launched through Service Catalog and how to provide users with defined selectable tags.
 
 ### SDK Bugs
-* `aws/signer/v4`: checking length on `stripExcessSpaces` [#1372](https://github.com/aws/aws-sdk-go/issues/1372)
+* `aws/signer/v4`: checking length on `stripExcessSpaces` [#1372](https://github.com/ks3sdk/ks3-go-sdk/issues/1372)
   * Fixes a bug where `stripExcessSpaces` did not check length against the slice.
-  * Fixes: [#1371](https://github.com/aws/aws-sdk-go/issues/1371)
+  * Fixes: [#1371](https://github.com/ks3sdk/ks3-go-sdk/issues/1371)
 Release v1.10.3 (2017-06-23)
 ===
 
@@ -153,7 +153,7 @@ Release v1.10.0 (2017-06-20)
   * This release provides a new API to retrieve the activities performed by WorkDocs users.
 
 ### SDK Features
-* `aws/credentials/plugincreds`: Add support for Go plugin for credentials [#1320](https://github.com/aws/aws-sdk-go/pull/1320)
+* `aws/credentials/plugincreds`: Add support for Go plugin for credentials [#1320](https://github.com/ks3sdk/ks3-go-sdk/pull/1320)
   * Adds support for using plugins to retrieve credentials for API requests. This change adds a new package plugincreds under aws/credentials. See the `example/aws/credentials/plugincreds` folder in the SDK for example usage.
 
 Release v1.9.00 (2017-06-19)
@@ -164,7 +164,7 @@ Release v1.9.00 (2017-06-19)
   * Improvements to Exception Modeling
 
 ### SDK Features
-* `service/s3/s3manager`: Adds batch operations to s3manager [#1333](https://github.com/aws/aws-sdk-go/pull/1333)
+* `service/s3/s3manager`: Adds batch operations to s3manager [#1333](https://github.com/ks3sdk/ks3-go-sdk/pull/1333)
   * Allows for batch upload, download, and delete of objects. Also adds the interface pattern to allow for easy traversal of objects. E.G `DownloadWithIterator`, `UploadWithIterator`, and `BatchDelete`. `BatchDelete` also contains a utility iterator using the `ListObjects` API to easily delete a list of objects.
   
 Release v1.8.44 (2017-06-16)
@@ -188,9 +188,9 @@ Release v1.8.43 (2017-06-15)
   * Added ProvisioningArtifactSummaries to DescribeProductAsAdmin's output to show the provisioning artifacts belong to the product. Allow filtering by SourceProductId in SearchProductsAsAdmin for AWS Marketplace products. Added a verbose option to DescribeProvisioningArtifact to display the CloudFormation template used to create the provisioning artifact.Added DescribeProvisionedProduct API. Changed the type of ProvisionedProduct's Status to be distinct from Record's Status. New ProvisionedProduct's Status are AVAILABLE, UNDER_CHANGE, TAINTED, ERROR. Changed Record's Status set of values to CREATED, IN_PROGRESS, IN_PROGRESS_IN_ERROR, SUCCEEDED, FAILED.
 
 ### SDK Bugs
-* `private/model/api`: Fix RESTXML support for XML Namespace [#1343](https://github.com/aws/aws-sdk-go/pull/1343)
+* `private/model/api`: Fix RESTXML support for XML Namespace [#1343](https://github.com/ks3sdk/ks3-go-sdk/pull/1343)
   * Fixes a bug with the SDK's generation of services using the REST XML protocol not annotating shape references with the XML Namespace attribute.
-  * Fixes [#1334](https://github.com/aws/aws-sdk-go/pull/1334)
+  * Fixes [#1334](https://github.com/ks3sdk/ks3-go-sdk/pull/1334)
 Release v1.8.42 (2017-06-14)
 ===
 
@@ -213,9 +213,9 @@ Release v1.8.40 (2017-06-13)
   * API Update for RDS: this update enables copy-on-write, a new Aurora MySQL Compatible Edition feature that allows users to restore their database, and support copy of TDE enabled snapshot cross region.
 
 ### SDK Bugs
-* `aws/request`: Fix NewErrParamMinLen to use correct ParamMinLenErrCode [#1336](https://github.com/aws/aws-sdk-go/issues/1336)
+* `aws/request`: Fix NewErrParamMinLen to use correct ParamMinLenErrCode [#1336](https://github.com/ks3sdk/ks3-go-sdk/issues/1336)
   * Fixes the `NewErrParamMinLen` function returning the wrong error code. `ParamMinLenErrCode` should be returned not `ParamMinValueErrCode`.
-  * Fixes [#1335](https://github.com/aws/aws-sdk-go/issues/1335)
+  * Fixes [#1335](https://github.com/ks3sdk/ks3-go-sdk/issues/1335)
 Release v1.8.39 (2017-06-09)
 ===
 
@@ -286,15 +286,15 @@ Release v1.8.33 (2017-06-01)
 * `service/lexmodelbuildingservice`: Updates service documentation and examples
 
 ### SDK Enhancements
-* `aws/defaults`: Exports shared credentials and config default filenames used by the SDK. [#1308](https://github.com/aws/aws-sdk-go/pull/1308)
+* `aws/defaults`: Exports shared credentials and config default filenames used by the SDK. [#1308](https://github.com/ks3sdk/ks3-go-sdk/pull/1308)
   * Adds SharedCredentialsFilename and SharedConfigFilename functions to defaults package.
 
 ### SDK Bugs
-* `aws/credentials`: Fixes shared credential provider's default filename on Windows. [#1308](https://github.com/aws/aws-sdk-go/pull/1308)
+* `aws/credentials`: Fixes shared credential provider's default filename on Windows. [#1308](https://github.com/ks3sdk/ks3-go-sdk/pull/1308)
   * The shared credentials provider would attempt to use the wrong filename on Windows if the `HOME` environment variable was defined.
-* `service/s3/s3manager`: service/s3/s3manager: Fix Downloader ignoring Range get parameter [#1311](https://github.com/aws/aws-sdk-go/pull/1311)
+* `service/s3/s3manager`: service/s3/s3manager: Fix Downloader ignoring Range get parameter [#1311](https://github.com/ks3sdk/ks3-go-sdk/pull/1311)
   * Fixes the S3 Download Manager ignoring the GetObjectInput's Range parameter. If this parameter is provided it will force the downloader to fallback to a single GetObject request disabling concurrency and automatic part size gets.
-  * Fixes [#1296](https://github.com/aws/aws-sdk-go/issues/1296)
+  * Fixes [#1296](https://github.com/ks3sdk/ks3-go-sdk/issues/1296)
 Release v1.8.32 (2017-05-31)
 ===
 
@@ -347,12 +347,12 @@ Release v1.8.27 (2017-05-22)
   * You can now specify the number of resources returned per page in GetResources operation, as an optional parameter, to easily manage the list of resources returned by your queries.
 
 ### SDK Bugs
-* `aws/request`: Add support for PUT temporary redirects (307) [#1283](https://github.com/aws/aws-sdk-go/issues/1283)
+* `aws/request`: Add support for PUT temporary redirects (307) [#1283](https://github.com/ks3sdk/ks3-go-sdk/issues/1283)
   * Adds support for Go 1.8's GetBody function allowing the SDK's http request using PUT and POST methods to be redirected with temporary redirects with 307 status code.
-  * Fixes: [#1267](https://github.com/aws/aws-sdk-go/issues/1267)
-* `aws/request`: Add handling for retrying temporary errors during unmarshal [#1289](https://github.com/aws/aws-sdk-go/issues/1289)
+  * Fixes: [#1267](https://github.com/ks3sdk/ks3-go-sdk/issues/1267)
+* `aws/request`: Add handling for retrying temporary errors during unmarshal [#1289](https://github.com/ks3sdk/ks3-go-sdk/issues/1289)
   * Adds support for retrying temporary errors that occur during unmarshaling of a request's response body.
-  * Fixes: [#1275](https://github.com/aws/aws-sdk-go/issues/1275)
+  * Fixes: [#1275](https://github.com/ks3sdk/ks3-go-sdk/issues/1275)
 Release v1.8.26 (2017-05-18)
 ===
 
@@ -400,7 +400,7 @@ Release v1.8.23 (2017-05-15)
   * UpdateAssociation API now supports updating document name and targets of an association. GetAutomationExecution API can return FailureDetails as an optional field to the StepExecution Object, which contains failure type, failure stage as well as other failure related information for a failed step.
 
 ### SDK Enhancements
-* `aws/session`: SDK should be able to load multiple custom shared config files. [#1258](https://github.com/aws/aws-sdk-go/issues/1258)
+* `aws/session`: SDK should be able to load multiple custom shared config files. [#1258](https://github.com/ks3sdk/ks3-go-sdk/issues/1258)
   * This change adds a `SharedConfigFiles` field to the `session.Options` type that allows you to specify the files, and their order, the SDK will use for loading shared configuration and credentials from when the `Session` is created. Use the `NewSessionWithOptions` Session constructor to specify these options. You'll also most likely want to enable support for the shared configuration file's additional attributes by setting `session.Option`'s `SharedConfigState` to `session.SharedConfigEnabled`. 
 
 Release v1.8.22 (2017-05-11)
@@ -1268,7 +1268,7 @@ SDK Bug Fixes
 ---
 * `private/protocol/xml/xmlutil`: Fixes xml marshaler to unmarshal properly
 into tagged fields 
-[#916](https://github.com/aws/aws-sdk-go/issues/916)
+[#916](https://github.com/ks3sdk/ks3-go-sdk/issues/916)
 
 Release v1.5.9 (2016-11-22)
 ===
@@ -1426,7 +1426,7 @@ Service Model Updates
 
 SDK Features
 ---
-* `service/s3`: Add support for accelerate with dualstack [#887](https://github.com/aws/aws-sdk-go/issues/887)
+* `service/s3`: Add support for accelerate with dualstack [#887](https://github.com/ks3sdk/ks3-go-sdk/issues/887)
 
 Release v1.4.16 (2016-10-13)
 ===
@@ -1440,15 +1440,15 @@ Service Model Updates
 
 SDK Bug Fixes
 ---
-* `aws/session`: Skip shared config on read errors [#883](https://github.com/aws/aws-sdk-go/issues/883)
-* `aws/signer/v4`: Add support for URL.EscapedPath to signer [#885](https://github.com/aws/aws-sdk-go/issues/885)
+* `aws/session`: Skip shared config on read errors [#883](https://github.com/ks3sdk/ks3-go-sdk/issues/883)
+* `aws/signer/v4`: Add support for URL.EscapedPath to signer [#885](https://github.com/ks3sdk/ks3-go-sdk/issues/885)
 
 SDK Features
 ---
-* `private/model/api`: Add docs for errors to API operations [#881](https://github.com/aws/aws-sdk-go/issues/881)
-* `private/model/api`: Improve field and waiter doc strings [#879](https://github.com/aws/aws-sdk-go/issues/879)
-* `service/dynamodb/dynamodbattribute`: Allow multiple struct tag elements [#886](https://github.com/aws/aws-sdk-go/issues/886)
-* Add build tags to internal SDK tools [#880](https://github.com/aws/aws-sdk-go/issues/880)
+* `private/model/api`: Add docs for errors to API operations [#881](https://github.com/ks3sdk/ks3-go-sdk/issues/881)
+* `private/model/api`: Improve field and waiter doc strings [#879](https://github.com/ks3sdk/ks3-go-sdk/issues/879)
+* `service/dynamodb/dynamodbattribute`: Allow multiple struct tag elements [#886](https://github.com/ks3sdk/ks3-go-sdk/issues/886)
+* Add build tags to internal SDK tools [#880](https://github.com/ks3sdk/ks3-go-sdk/issues/880)
 
 Release v1.4.15 (2016-10-06)
 ===
@@ -1463,12 +1463,12 @@ Service Model Updates
 
 SDK Bug Fixes
 ---
-* `aws/request`: Fix HTTP Request Body race condition [#874](https://github.com/aws/aws-sdk-go/issues/874)
+* `aws/request`: Fix HTTP Request Body race condition [#874](https://github.com/ks3sdk/ks3-go-sdk/issues/874)
 
 SDK Feature Updates
 ---
-* `aws/ec2metadata`: Add support for EC2 User Data [#872](https://github.com/aws/aws-sdk-go/issues/872)
-* `aws/signer/v4`: Remove logic determining if request needs to be resigned [#876](https://github.com/aws/aws-sdk-go/issues/876)
+* `aws/ec2metadata`: Add support for EC2 User Data [#872](https://github.com/ks3sdk/ks3-go-sdk/issues/872)
+* `aws/signer/v4`: Remove logic determining if request needs to be resigned [#876](https://github.com/ks3sdk/ks3-go-sdk/issues/876)
 
 Release v1.4.14 (2016-09-29)
 ===

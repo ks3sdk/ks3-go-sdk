@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/aws/aws-sdk-go/aws/endpoints"
+	"github.com/ks3sdk/ks3-go-sdk/aws/endpoints"
 )
 
 // Demostrates how the SDK's endpoints can be enumerated over to discover

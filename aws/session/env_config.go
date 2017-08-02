@@ -4,7 +4,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/aws/aws-sdk-go/aws/credentials"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials"
 )
 
 // envConfig is a collection of environment values the SDK will read

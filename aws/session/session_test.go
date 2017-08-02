@@ -11,11 +11,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/defaults"
-	"github.com/aws/aws-sdk-go/awstesting"
-	"github.com/aws/aws-sdk-go/service/s3"
+	"github.com/ks3sdk/ks3-go-sdk/aws"
+	"github.com/ks3sdk/ks3-go-sdk/aws/credentials"
+	"github.com/ks3sdk/ks3-go-sdk/aws/defaults"
+	"github.com/ks3sdk/ks3-go-sdk/awstesting"
+	"github.com/ks3sdk/ks3-go-sdk/service/s3"
 )
 
 func TestNewDefaultSession(t *testing.T) {
